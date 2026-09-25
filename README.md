@@ -14,7 +14,7 @@ Every exam season, students in my college and branch chase seniors and group cha
 
 ![Sketch](./docs/sketch.png)
 
-[View live board](https://excalidraw.com/#json=OpOdy0Yi6qsKbsOpHg-l3,IpRZ219McPunwcRwO_sqPg)
+[View live board](https://excalidraw.com/#json=9EFw36O0st3QnS3e4Vxbz,_MpbJ_eJ65kmkzlTSNqf0g)
 
 ---
 
