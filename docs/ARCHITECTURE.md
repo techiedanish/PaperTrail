@@ -1,4 +1,4 @@
-# Architecture - PaperTrails
+# Architecture - PaperTrail
 
 
 ## 1. System diagram
