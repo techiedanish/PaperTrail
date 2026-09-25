@@ -147,7 +147,7 @@ The admin role is set directly in the database. There is no screen for creating 
 ## 6. Planned repository layout
 
 ```
-pyq-vault/
+PaperTrail/
 ├── README.md
 ├── docs/                    # the five documents + sketch
 ├── client/                  # React (Vite)
