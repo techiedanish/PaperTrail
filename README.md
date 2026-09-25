@@ -1,4 +1,4 @@
-# PaperTrails
+# PaperTrail
 
 > Students in my college and branch hunt for past exam papers and the syllabus across WhatsApp groups and scattered Drive folders, and have nothing to practise with that matches how their exams are actually set.
 
