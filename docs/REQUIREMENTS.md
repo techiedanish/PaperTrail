@@ -1,4 +1,4 @@
-# Requirements - PaperTrails
+# Requirements - PaperTrail
 
 
 ## 1. Functional requirements
