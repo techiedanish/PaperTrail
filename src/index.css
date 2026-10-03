@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-display: "Source Serif 4", Georgia, serif;
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+
+  --color-paper: #f1efe8;
+  --color-paper-raised: #f8f6f0;
+  --color-ink: #1c2024;
+  --color-ink-soft: #52555a;
+  --color-rule: rgba(28, 32, 36, 0.14);
+
+  --color-verified: #1f6f5c;
+  --color-verified-soft: #e3efe9;
+  --color-mark: #a3362b;
+  --color-mark-soft: #f3e3df;
+  --color-pending: #9c6b1f;
+  --color-pending-soft: #f3e9d6;
+}
+
+html {
+  color-scheme: light;
+}
+html.dark {
+  color-scheme: dark;
+}
+
+body {
+  background-color: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+html.dark body {
+  background-color: #121417;
+  color: #e8e6df;
+}
+
+html.dark {
+  --color-paper: #121417;
+  --color-paper-raised: #181b1f;
+  --color-ink: #e8e6df;
+  --color-ink-soft: #9a9d9f;
+  --color-rule: rgba(232, 230, 223, 0.14);
+  --color-verified-soft: rgba(79, 158, 138, 0.16);
+  --color-mark-soft: rgba(196, 92, 75, 0.16);
+  --color-pending-soft: rgba(201, 150, 60, 0.16);
+}
+
+* {
+  border-color: var(--color-rule);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-verified);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* ruled-paper top edge used on cards */
+.ruled-top {
+  background-image: repeating-linear-gradient(
+    to bottom,
+    var(--color-rule) 0,
+    var(--color-rule) 1px,
+    transparent 1px,
+    transparent 7px
+  );
+  background-size: 100% 7px;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+/* stamp rotation for verified badge */
+.stamp {
+  transform: rotate(-6deg);
+}
