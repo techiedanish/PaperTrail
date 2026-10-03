@@ -1,6 +1,6 @@
 # PaperTrail
 
-> Verified past exam papers, the syllabus, and AI-generated practice questions — for one college, one branch.
+> Verified past exam papers, the syllabus, and AI-generated practice question.
 
 [![Live Demo](https://img.shields.io/badge/Live-Demo-blue?style=for-the-badge)](YOUR_LIVE_URL)
 [![Repo](https://img.shields.io/badge/GitHub-Repo-black?style=for-the-badge&logo=github)](https://github.com/techiedanish/PaperTrail)
