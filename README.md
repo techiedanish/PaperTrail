@@ -12,27 +12,27 @@
 ## Screenshots
 
 ### 1. Home Page (Light Mode)
-![Home Page](assets/docs/screenshots/1-HomePage.png)
+![Home Page](assets/screenshots/1-HomePage.png)
 
 ---
 
 ### 2. Home Page (Dark Mode)
-![Home Page Dark Mode](assets/docs/screenshots/2-HomePage_darkMode.png)
+![Home Page Dark Mode](assets/screenshots/2-HomePage_darkMode.png)
 
 ---
 
 ### 3. The Vault
-![The Vault](assets/docs/screenshots/3-TheVault.png)
+![The Vault](assets/screenshots/3-TheVault.png)
 
 ---
 
 ### 4. Review Page
-![Review Page](assets/docs/screenshots/4-ReviewPage.png)
+![Review Page](assets/screenshots/4-ReviewPage.png)
 
 ---
 
 ### 5. Sign In Page
-![Sign In Page](assets/docs/screenshots/5-SignInPage.png)
+![Sign In Page](assets/screenshots/5-SignInPage.png)
 ---
 
 ## What It Does
