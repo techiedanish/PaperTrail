@@ -17,9 +17,9 @@ export default function App() {
   return (
     <AppProvider>
       <BrowserRouter>
-        <div className="min-h-screen bg-[var(--color-paper)] text-[var(--color-ink)]">
+        <div className="flex min-h-screen flex-col bg-[var(--color-paper)] text-[var(--color-ink)]">
           <NavBar />
-          <main>
+          <main className="flex-1">
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/login" element={<Login />} />
@@ -34,7 +34,7 @@ export default function App() {
             </Routes>
           </main>
           <footer className="border-t border-[var(--color-rule)] px-4 py-8 text-center text-xs text-[var(--color-ink-soft)] sm:px-6">
-            PaperTrail — Journey to Mastery, Level 2: Kenshi. Frontend only, mock data, no backend yet.
+            PaperTrail — Archive, practice, and track past examination papers.
           </footer>
         </div>
         <Toasts />
