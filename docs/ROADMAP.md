@@ -2,12 +2,14 @@
 
 Dates follow the program's weekly Sunday deadlines, counting this week (21 September 2026) as Week 1. If the platform calendar differs, the order and the scope of each milestone stay the same and only the dates move.
 
-| Week | Level | Goal |
-|---|---|---|
-| 1 | Ronin | Decide exactly what I'm building, on paper |
-| 2 | Kenshi | Every screen exists and feels real, with fake data |
-| 3 | Samurai | It really works and is live on the internet |
-| 4 | Shogun  | Real students use it and I improve it from what they say |
+| Week | Level | Goal | Status |
+|---|---|---|---|
+| 1 | Ronin | Decide exactly what I'm building, on paper | **Done — passed, 70/100** |
+| 2 | Kenshi | Every screen exists and feels real, with fake data | **In Review** |
+| 3 | Samurai | It really works and is live on the internet | Not started |
+| 4 | Shogun  | Real students use it and I improve it from what they say | Not started |
+
+**Judge feedback from Ronin, carried forward:** the practice generator (not the paper repository) is the strongest differentiator — the Kenshi build gives it the most visual attention of any screen as a result. The other note was to keep the architecture simple and production-oriented; Samurai below sticks to exactly what's in [ARCHITECTURE.md](./ARCHITECTURE.md) and [REQUIREMENTS.md](./REQUIREMENTS.md) rather than adding anything new.
 
 ---
 
@@ -20,6 +22,8 @@ Dates follow the program's weekly Sunday deadlines, counting this week (21 Septe
 - Check the real free-tier limits shown in my Gemini project.
 
 **Done when:** every document is filled, the sketch link opens without login, and the docs do not contradict each other.
+
+**Result:** passed with 70/100. See [README.md](../README.md) for the judge feedback and how it's shaping Kenshi and Samurai.
 
 ---
 
@@ -40,6 +44,10 @@ Dates follow the program's weekly Sunday deadlines, counting this week (21 Septe
 **Alongside the code (no coding needed):** collect at least 10 real papers across 3 subjects from my batch and seniors, and get the syllabus text for those subjects, so the app has real content to be seeded with in Samurai.
 
 **Not in Kenshi:** anything that needs a server, a database, real login or the AI. Ratings, reports, topic stats and usage stats (F11 to F14) are also not built yet.
+
+**Result:** shipped. All 7 screens above are built and interactive on mock data (`src/mock/data.js`), responsive from 375px to 1280px, with dark mode, loading/empty/error states and animation throughout. Two honest deviations from this plan, both documented in the README rather than left silent:
+- The semester filter in item 2 above is deferred — the mock dataset only covers one semester, so the filter would be a no-op until Samurai's seed data spans more than one.
+- The repo layout in [ARCHITECTURE.md](./ARCHITECTURE.md) section 6 planned a `client/`/`server/` split; since there's no backend yet, the app sits at the repo root instead. The split returns when the Express API is added in Samurai.
 
 ---
 
