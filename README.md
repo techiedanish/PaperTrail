@@ -2,7 +2,7 @@
 
 > Verified past exam papers, the syllabus, and AI-generated practice question.
 
-[![Live Demo](https://img.shields.io/badge/Live-Demo-blue?style=for-the-badge)](YOUR_LIVE_URL)
+[![Live Demo](https://img.shields.io/badge/Live-Demo-blue?style=for-the-badge)](https://paper-trail-olive-six.vercel.app/https://paper-trail-olive-six.vercel.app/https://paper-trail-olive-six.vercel.app/)
 [![Repo](https://img.shields.io/badge/GitHub-Repo-black?style=for-the-badge&logo=github)](https://github.com/techiedanish/PaperTrail)
 
 ---
