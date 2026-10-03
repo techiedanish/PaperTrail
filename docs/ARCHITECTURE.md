@@ -143,20 +143,44 @@ Rough nouns and relationships, not a final schema.
 The admin role is set directly in the database. There is no screen for creating admins.
 
 ---
+## 6. Repository layout
 
-## 6. Planned repository layout
+### 6.1 As built for Kenshi (current)
+
+No backend exists yet, so the planned `client/`/`server/` split (6.2) hasn't started. The frontend lives at the repo root instead:
 
 ```
 PaperTrail/
 ├── README.md
 ├── docs/                    # the five documents + sketch
-├── client/                  # React (Vite)
+├── index.html
+├── vite.config.js
+├── public/
+└── src/
+    ├── main.jsx
+    ├── App.jsx              # router + layout
+    ├── context/             # role, theme, toasts (session-only state)
+    ├── pages/                # Home, Login, Vault, PaperDetail, Syllabus, Upload, Practice
+    │   └── admin/            # Queue, ReviewPaper
+    ├── components/           # NavBar, PaperCard, StatusBadge, Skeleton, EmptyState, ErrorState, Toasts
+    └── mock/
+        └── data.js           # stands in for the backend; shaped to match API_SPEC.md
+```
+
+### 6.2 Planned for Samurai
+
+Once the Express API is added, the repo splits into `client/` and `server/`:
+
+```
+PaperTrail/
+├── README.md
+├── docs/                    # the five documents + sketch
+├── client/                  # becomes today's root-level frontend, moved in here
 │   └── src/
-│       ├── pages/           # Login, Vault, PaperDetail, Syllabus, Upload, Practice, Admin...
-│       ├── components/      # reusable cards, filters, buttons, loaders, error boxes
-│       ├── api/             # one small module that wraps fetch calls
-│       ├── mock/            # mock JSON used in Kenshi (before the backend exists)
-│       └── styles/
+│       ├── pages/
+│       ├── components/
+│       ├── api/             # one small module that wraps fetch calls, replacing src/mock
+│       └── mock/             # kept temporarily during the swap, then removed
 └── server/                  # Node + Express
     ├── src/
     │   ├── routes/
@@ -172,6 +196,5 @@ PaperTrail/
 
 
 ---
-
 
 
